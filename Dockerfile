@@ -1,3 +1,3 @@
-FROM node:alpine
+FROM nginx
 MAINTAINER mauricewainaina19@gmail.com
-EXPOSE 22 80
+EXPOSE 80
