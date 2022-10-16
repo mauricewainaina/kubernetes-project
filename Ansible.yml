@@ -1,9 +1,10 @@
+
 ---
--hosts: k8s 
- become: true
- tasks:
-   - name: creating nginx-deployment 
-     command: kubectl apply -f /home/ubuntu/nginx_deployment.yml
-   - name: creating nginx-service 
-     command: kubectl apply -f /home/ubuntu/nginx_service.yml
-      
+- hosts: k8s
+  become: true
+  tasks:
+  - name: creating nginx-deployment
+    command: kubectl apply -f /home/ubuntu/nginx_deployment.yml
+  - name: creating nginx-service
+    command: kubectl apply -f /home/ubuntu/nginx_service.yml
+
