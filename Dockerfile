@@ -1,3 +1,3 @@
 FROM nginx
-MAINTAINER mauricewainaina19@gmail.com
+MAINTAINER walewabaya72@gmail.com
 EXPOSE 80
