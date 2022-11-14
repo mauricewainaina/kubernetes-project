@@ -1,3 +1,3 @@
-FROM nginx
+FROM busybox
 MAINTAINER walewabaya72@gmail.com
-EXPOSE 80
+ENTRYPOINT ["echo", "hello-world"]
