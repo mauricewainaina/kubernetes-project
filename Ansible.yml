@@ -4,6 +4,6 @@
   become: true
   tasks:
 
-  - name: creating app-deployment
+  - name: creating myapp-deployment
     command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml
 
