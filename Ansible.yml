@@ -3,6 +3,10 @@
 - hosts: k8s
   become: true
   tasks:
-  - name: creating nginx-deployment
+  - name: starting k8s cluster
+    command: minikube start --driver=none
+
+
+  - name: creating app-deployment
     command: kubectl apply -f /home/ubuntu/app_deployment.yml
 
