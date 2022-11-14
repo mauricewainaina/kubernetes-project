@@ -5,5 +5,5 @@
   tasks:
 
   - name: creating app-deployment
-    command: kubectl apply -f /home/ubuntu/app_deployment.yml
+    command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml
 
