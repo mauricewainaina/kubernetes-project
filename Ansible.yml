@@ -4,7 +4,5 @@
   become: true
   tasks:
   - name: creating nginx-deployment
-    command: kubectl apply -f /home/ubuntu/nginx_deployment.yml
-  - name: creating nginx-service
-    command: kubectl apply -f /home/ubuntu/nginx_service.yml
+    command: kubectl apply -f /home/ubuntu/app_deployment.yml
 
