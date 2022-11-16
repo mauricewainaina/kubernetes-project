@@ -1,0 +1,7 @@
+app_deployment.yml 
+.git
+Dockerfile
+Ansible.yml
+package-lock.yaml
+package.yaml
+node_modules
