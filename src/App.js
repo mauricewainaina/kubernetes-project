@@ -14,8 +14,8 @@ function App() {
       <Banner/>
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow/>
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
-      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedy}/>
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
       <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals}/>
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries}/>
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
