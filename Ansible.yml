@@ -1,9 +1,12 @@
-
 ---
 - hosts: k8s
   become: true
   tasks:
 
+  - name: deleting previous myapp-deployment
+    command: sudo kubectl delete -f /home/ubuntu/app_deployment.yml
+
   - name: creating myapp-deployment
     command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml
+      
 
