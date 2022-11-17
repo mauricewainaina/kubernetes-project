@@ -4,7 +4,7 @@
   tasks:
 
   - name: deleting previous myapp-deployment
-    command: sudo kubectl delete -f /home/ubuntu/app_deployment.yml
+    command: sudo kubectl delete deployment webapp-deployment
 
   - name: creating myapp-deployment
     command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml
