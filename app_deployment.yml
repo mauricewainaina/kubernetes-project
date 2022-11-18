@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webapp
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: webapp
@@ -19,6 +19,14 @@ spec:
         image: maurice94/k8s-pipeline:latest
         ports:
         - containerPort: 3000
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+          
 
 ---
 apiVersion: v1
