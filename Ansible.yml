@@ -4,11 +4,11 @@
   tasks:
 
   - name: deleting previous myapp-deployment
-    command: sudo kubectl delete deployments webapp-deployment --namespace=infinite9-frontend
+    command: sudo kubectl delete deployments webapp-deployment
 
 
   - name: creating myapp-deployment
-    command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml --namespace=infinite9-frontend
+    command: sudo kubectl apply -f /home/ubuntu/app_deployment.yml 
 
       
 
